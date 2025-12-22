@@ -1,48 +1,24 @@
 
-<!DOCTYPE html><html>
-<head>
-<title>Projects</title>
-<link rel="stylesheet" href="assets/css/style.css">
-<script defer src="assets/js/app.js"></script>
-</head>
-<body>
-
-<header>
-<strong>⬢ AI Engineer</strong>
-<nav>
-<a href="index.html">About</a>
-<a href="projects.html">Projects</a>
-<a href="vision.html">Vision</a>
-<a href="blog.html">Blog</a>
-<a href="resume/resume.pdf" download>Resume</a>
-<button onclick="toggleTheme()">🌙</button>
-</nav>
-</header>
-
-<section class="section">
-<h2>My Projects</h2>
-<div>
-<button onclick="filterProjects('all')">All</button>
-<button onclick="filterProjects('cv')">CV</button>
-<button onclick="filterProjects('genai')">GenAI</button>
-<button onclick="filterProjects('ocr')">OCR</button>
-</div>
-
-<div class="grid grid-3">
-<div class="card project" data-tech="genai">
-<h3>GenAI Multidomain Platform</h3>
-<p>Enterprise-scale Generative AI solution.</p>
-<span class="badge">Gen AI</span><br>
-<a class="btn primary" href="projects/genai.html">Project Details</a>
-</div>
-
-<div class="card project" data-tech="cv">
-<h3>Realtime Vision Counting</h3>
-<p>High-accuracy computer vision system.</p>
-<span class="badge">Computer Vision</span><br>
-<a class="btn primary" href="projects/cv.html">Project Details</a>
-</div>
-</div>
-</section>
-<footer>© 2025 Abhinas Kumar · AI & Platform Engineer</footer>
+<!DOCTYPE html><html><head><meta charset="UTF-8"><title>My Projects</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="assets/css/style.css"></head><body>
+<header class="navbar"><div class="nav-left"><div class="logo">⬢</div>
+<nav><a href="index.html">About</a><a class="active" href="projects.html">Projects</a></nav>
+</div><div class="nav-right"><button class="btn-outline">Download Resume</button>
+<img class="avatar" src="assets/images/profile.png"></div></header>
+<section class="section"><h2>My Projects</h2><div class="projects-grid">
+<div class="project-card"><img src="assets/images/project1.png">
+<h3>GenAI Led Multidomain Platform</h3>
+<p>Developed a scalable ML pipeline for real-time fraud detection.</p>
+<div class="tags"><span>Python</span><span>FastAPI</span><span>TensorFlow</span></div>
+<button class="btn-primary">Project Details</button></div>
+</div></section>
+<section class="section"><h2>Professional Experience</h2>
+<div class="experience-grid"><div>
+<div class="exp-item"><span class="year">2017 - 2020</span><h4>AI Engineer</h4>
+<a>Data Solutions Corp.</a><p>Developed ML models for NLP and CV.</p></div></div>
+<div><div class="exp-item"><span class="year">2014 - 2017</span><h4>Software Engineer</h4>
+<a>Global Software Group</a><p>Worked on backend services.</p></div></div>
+</div></section>
+<footer class="footer"><div>Crafting intelligent solutions with precision and passion.</div></footer>
 </body></html>
