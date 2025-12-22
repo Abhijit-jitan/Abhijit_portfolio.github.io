@@ -1,83 +1,231 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>My Projects</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8" />
+  <title>Projects | AI Engineer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
+<div class="app-shell">
 
-<header class="navbar">
-  <div class="nav-left">
-    <div class="logo">⬢</div>
-    <nav>
-      <a href="index.html">About</a>
-      <a class="active" href="projects.html">Projects</a>
-    </nav>
-  </div>
-  <div class="nav-right">
-    <button class="btn-outline">Download Resume</button>
-    <img class="avatar" src="assets/images/profile.png">
-  </div>
-</header>
-
-<section class="section">
-  <h2>My Projects</h2>
-
-  <div class="projects-grid">
-    <div class="project-card">
-      <img src="assets/images/project1.png">
-      <h3>GenAI Led Multidomain Platform</h3>
-      <p>Developed a scalable machine learning pipeline to detect transactional fraud in real-time, reducing false positives by 15% and saving millions in potential losses.</p>
-      <div class="tags"><span>Python</span><span>FastAPI</span><span>PowerBI</span><span>Pyside 6</span><span>TensorFlow</span><span>MS SQL SERVER</span></div>
-      <button class="btn-primary">Project Details</button>
+  <!-- HEADER (UNCHANGED) -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-left">
+        <img src="assets/images/logo.svg" class="logo" />
+        <nav class="nav">
+          <a href="index.html">About</a>
+          <a class="active" href="projects.html">Projects</a>
+          <a href="vision.html">Vision</a>
+        </nav>
+      </div>
+      <button class="resume-btn">Download Resume</button>
     </div>
-  </div>
-</section>
+  </header>
 
-<section class="section">
-  <h2>Professional Experience</h2>
+  <!-- PROJECTS -->
+  <section class="projects-section">
+    <h2>My Projects</h2>
 
-  <div class="experience">
-    <div>
-      <div class="exp">
-        <span class="year">2017 - 2020</span>
-        <h4>AI Engineer</h4>
-        <a>Data Solutions Corp.</a>
-        <p>Developed and optimized machine learning models for natural language processing and computer vision applications.</p>
+    <div class="projects-grid">
+
+      <!-- CARD 1 -->
+      <div class="project-card">
+        <img src="assets/projects/p1.jpg" />
+        <h3>GenAI Led Multidomain Platform</h3>
+        <p>
+          Developed a scalable machine learning pipeline to detect
+          transactional fraud in real-time, reducing false positives by 15%.
+        </p>
+        <div class="tags">
+          <span>Python</span><span>FastAPI</span><span>PowerBI</span><span>TensorFlow</span>
+        </div>
+        <a class="project-btn" href="project-details.html">Project Details</a>
       </div>
 
-      <div class="exp">
-        <span class="year">2014 - 2017</span>
-        <h4>Software Engineer</h4>
-        <a>Global Software Group</a>
-        <p>Contributed to the development of enterprise software solutions, focusing on backend services and API design.</p>
+      <!-- CARD 2 -->
+      <div class="project-card">
+        <img src="assets/projects/p2.jpg" />
+        <h3>Automated Fabric Shrinkage Detection App</h3>
+        <p>
+          Automated data quality checks and fabric shrinkage analysis,
+          improving reliability across enterprise systems.
+        </p>
+        <div class="tags">
+          <span>Python</span><span>Flask</span><span>TensorFlow</span><span>TFLite</span>
+        </div>
+        <a class="project-btn" href="project-details.html">Project Details</a>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="project-card">
+        <img src="assets/projects/p3.jpg" />
+        <h3>Automated Plank & Pipe Count Platform</h3>
+        <p>
+          Vision-based industrial counting system using deep learning
+          models deployed at scale.
+        </p>
+        <div class="tags">
+          <span>Python</span><span>YOLO</span><span>FastAPI</span><span>Azure SQL</span>
+        </div>
+        <a class="project-btn" href="project-details.html">Project Details</a>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="project-card">
+        <img src="assets/projects/p4.jpg" />
+        <h3>GenAI Led Personalized Medical Health Bot</h3>
+        <p>
+          AI-powered conversational assistant for personalized medical
+          insights and triaging.
+        </p>
+        <div class="tags">
+          <span>Python</span><span>FastAPI</span><span>LLM</span><span>Azure</span>
+        </div>
+        <a class="project-btn" href="project-details.html">Project Details</a>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="project-card">
+        <img src="assets/projects/p5.jpg" />
+        <h3>Realtime Automated Towel Count System</h3>
+        <p>
+          Computer vision system to count textile products on production
+          lines in real time.
+        </p>
+        <div class="tags">
+          <span>Python</span><span>OpenCV</span><span>YOLO</span>
+        </div>
+        <a class="project-btn" href="project-details.html">Project Details</a>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="project-card">
+        <img src="assets/projects/p6.jpg" />
+        <h3>Telecom Permit-to-Work Automation App</h3>
+        <p>
+          Automated permit workflows for telecom field operations
+          and compliance tracking.
+        </p>
+        <div class="tags">
+          <span>Python</span><span>Flask</span><span>GCP</span>
+        </div>
+        <a class="project-btn" href="project-details.html">Project Details</a>
+      </div>
+
+      <!-- CARD 7 -->
+      <div class="project-card">
+        <img src="assets/projects/p7.jpg" />
+        <h3>Realtime Automated Bottle Count System</h3>
+        <p>
+          High-accuracy object counting system for FMCG bottling lines.
+        </p>
+        <div class="tags">
+          <span>Python</span><span>YOLO</span><span>FastAPI</span>
+        </div>
+        <a class="project-btn" href="project-details.html">Project Details</a>
+      </div>
+
+      <!-- CARD 8 -->
+      <div class="project-card">
+        <img src="assets/projects/p8.jpg" />
+        <h3>Truck Appointment Booking & Process Management</h3>
+        <p>
+          End-to-end logistics booking system with queue management
+          and analytics.
+        </p>
+        <div class="tags">
+          <span>Python</span><span>Flask</span><span>PostgreSQL</span>
+        </div>
+        <a class="project-btn" href="project-details.html">Project Details</a>
+      </div>
+
+      <!-- CARD 9 -->
+      <div class="project-card">
+        <img src="assets/projects/p9.jpg" />
+        <h3>Rubber Extruder Machine Health Prediction</h3>
+        <p>
+          Predictive maintenance system using sensor data
+          and ML models.
+        </p>
+        <div class="tags">
+          <span>Python</span><span>PyTorch</span><span>Azure</span>
+        </div>
+        <a class="project-btn" href="project-details.html">Project Details</a>
+      </div>
+
+      <!-- CARD 10 -->
+      <div class="project-card">
+        <img src="assets/projects/p10.jpg" />
+        <h3>Processed Rubber Bale Defect Detection</h3>
+        <p>
+          Vision-based defect detection system reducing
+          production losses.
+        </p>
+        <div class="tags">
+          <span>Python</span><span>OpenCV</span><span>TensorFlow</span>
+        </div>
+        <a class="project-btn" href="project-details.html">Project Details</a>
+      </div>
+
+      <!-- CARD 11 -->
+      <div class="project-card">
+        <img src="assets/projects/p11.jpg" />
+        <h3>Auto Warehouse Management System</h3>
+        <p>
+          Intelligent warehouse automation system integrating
+          inventory and analytics.
+        </p>
+        <div class="tags">
+          <span>Python</span><span>Flask</span><span>GCP</span>
+        </div>
+        <a class="project-btn" href="project-details.html">Project Details</a>
+      </div>
+
+      <!-- CARD 12 -->
+      <div class="project-card">
+        <img src="assets/projects/p12.jpg" />
+        <h3>Realtime Recommendation Engine</h3>
+        <p>
+          Recommendation system increasing user engagement
+          by 20% on digital platforms.
+        </p>
+        <div class="tags">
+          <span>Python</span><span>PyTorch</span><span>Scikit-learn</span>
+        </div>
+        <a class="project-btn" href="project-details.html">Project Details</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER (UNCHANGED) -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p>© 2025 AI Engineer Portfolio<br /><em>All rights reserved.</em></p>
+      </div>
+      <div class="footer-center">
+        <h4>Explore</h4>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="vision.html">Vision</a>
+        </nav>
+      </div>
+      <div class="footer-right">
+        <h4>Connect</h4>
+        <div class="footer-icons">
+          <a href="mailto:hello@example.com">✉️</a>
+          <a href="#">in</a>
+          <a href="#">⌂</a>
+        </div>
       </div>
     </div>
+  </footer>
 
-    <div>
-      <div class="exp">
-        <span class="year">2017 - 2020</span>
-        <h4>AI Engineer</h4>
-        <a>Data Solutions Corp.</a>
-        <p>Built custom data ingestion and processing frameworks for large-scale datasets.</p>
-      </div>
-
-      <div class="exp">
-        <span class="year">2014 - 2017</span>
-        <h4>Software Engineer</h4>
-        <a>Global Software Group</a>
-        <p>Participated in full software development lifecycle from requirements gathering to deployment.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div>Crafting intelligent solutions with precision and passion.</div>
-</footer>
-
+</div>
 </body>
 </html>
