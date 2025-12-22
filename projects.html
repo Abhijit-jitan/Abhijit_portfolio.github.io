@@ -1,16 +1,35 @@
 
-<!DOCTYPE html>
-<html><head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="assets/css/style.css"></head>
+<!DOCTYPE html><html>
+<head>
+<title>Projects</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<script defer src="assets/js/app.js"></script>
+</head>
 <body>
-<header class="navbar"><a href="index.html">← Back</a></header>
-<section class="section">
-<h1>My Projects</h1>
-<div class="grid">
-<div class="card">Smart Store Vision Platform</div>
-<div class="card">Predictive Maintenance</div>
-<div class="card">AI Chatbot Platform</div>
+<header>
+<a href="index.html">← Home</a>
+<input placeholder="Search projects..." oninput="searchProjects(this.value)">
+<div>
+<button onclick="filterProjects('all')">All</button>
+<button onclick="filterProjects('cv')">CV</button>
+<button onclick="filterProjects('genai')">GenAI</button>
+<button onclick="filterProjects('ocr')">OCR</button>
+</div>
+</header>
+
+<section class="grid grid-3">
+<div class="card project" data-tech="genai">
+<h3>GenAI Multidomain Platform</h3>
+<p>Enterprise-grade GenAI solution</p>
+<span class="badge">Gen AI</span><br>
+<a class="btn primary" href="projects/genai.html">Project Details</a>
+</div>
+
+<div class="card project" data-tech="cv">
+<h3>Realtime Vision Counting</h3>
+<p>Industrial computer vision system</p>
+<span class="badge">Computer Vision</span><br>
+<a class="btn primary" href="projects/cv.html">Project Details</a>
 </div>
 </section>
 </body></html>

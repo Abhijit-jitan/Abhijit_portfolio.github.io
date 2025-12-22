@@ -1,15 +1,35 @@
 
-:root{--primary:#22c55e;--bg:#f8fafc;--text:#020617;--card:#fff;}
+:root{--bg:#ffffff;--text:#0f172a;--card:#f8fafc;--primary:#20c997}
+[data-theme="dark"]{--bg:#020617;--text:#e5e7eb;--card:#0f172a}
 *{box-sizing:border-box}
-body{margin:0;font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text)}
-.navbar{display:flex;justify-content:space-between;align-items:center;padding:16px 40px;background:#fff}
-.hero{padding:80px 40px;background:linear-gradient(120deg,#ecfdf5,#f0fdfa)}
-.hero-text{max-width:600px}
-.section{padding:60px 40px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
-.card{background:var(--card);padding:24px;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.08)}
-.btn{padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:600}
+body{
+ margin:0;font-family:Inter,system-ui;background:var(--bg);color:var(--text);
+ line-height:1.6;user-select:none;
+}
+a{text-decoration:none;color:inherit}
+header,footer{padding:20px 40px;display:flex;justify-content:space-between;align-items:center}
+nav a{margin:0 12px;font-weight:500}
+.hero{background:linear-gradient(135deg,#eafff4,#f6fffb);padding:90px 40px}
+.card{
+ background:var(--card);border-radius:18px;padding:24px;margin-bottom:24px;
+ animation:fadeUp .8s;
+}
+.grid{display:grid;gap:24px}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.btn{padding:10px 18px;border-radius:10px}
 .primary{background:var(--primary);color:#fff}
-.outline{border:1px solid var(--primary);color:var(--primary)}
-.footer{text-align:center;padding:24px;font-size:14px}
-@media(max-width:768px){.navbar{flex-direction:column;gap:12px}.hero{padding:40px 20px}}
+.badge{
+ pointer-events:none;display:inline-block;padding:6px 12px;border-radius:999px;
+ background:#e8fff6;color:var(--primary);font-size:12px;margin:6px 0;
+}
+input{padding:10px;border-radius:8px;border:1px solid #ccc}
+/* Screenshot deterrence */
+body::after{
+ content:"© Abhinas Kumar – Confidential";
+ position:fixed;top:50%;left:50%;
+ transform:translate(-50%,-50%) rotate(-30deg);
+ font-size:48px;font-weight:700;
+ color:rgba(0,0,0,0.05);
+ pointer-events:none;white-space:nowrap;
+}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1}}
