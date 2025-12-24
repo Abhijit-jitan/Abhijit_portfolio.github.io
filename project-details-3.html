@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Automated Plank & Pipe Count Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+<div class="app-shell">
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-left">
+        <img src="assets/images/logo.png" alt="Logo" class="logo" />
+        <nav class="nav">
+          <a href="index.html">About</a>
+          <a class="active" href="projects.html">Projects</a>
+          <a href="vision.html">Vision</a>
+        </nav>
+      </div>
+      <button class="resume-btn">Download Resume</button>
+    </div>
+  </header>
+
+  <!-- ================= PROJECT DETAILS ================= -->
+  <section class="project-details">
+
+    <h1 class="project-title">
+      Automated Plank & Pipe Count Platform
+    </h1>
+
+    <div class="project-meta">
+      <strong>Industry:</strong> Manufacturing & Warehousing
+      &nbsp;&nbsp;&nbsp;
+      <strong>Technology:</strong> Computer Vision, Object Detection
+      &nbsp;&nbsp;&nbsp;
+      <strong>Deployment Type:</strong> Mobile / Edge / On-Premise
+    </div>
+
+    <!-- ================= PROBLEM ================= -->
+    <h2>Problem Statement</h2>
+    <p>
+      Counting large stacks of planks or pipes—often consisting of
+      <strong>hundreds or thousands of items</strong>—is a repetitive,
+      time-consuming, and error-prone task in manufacturing yards
+      and warehouses.
+    </p>
+    <p>
+      Manual counting leads to <strong>inaccurate inventory records,
+      operational delays, and increased labor effort</strong>,
+      especially when handling bulk materials.
+    </p>
+
+    <!-- ================= OBJECTIVES ================= -->
+    <h2>Objectives</h2>
+    <ul>
+      <li>Automate counting of plank and pipe stacks using computer vision</li>
+      <li>Eliminate manual counting errors and delays</li>
+      <li>Enable fast counting using a simple mobile application</li>
+      <li>Provide reliable and repeatable count results</li>
+    </ul>
+
+    <!-- ================= SOLUTION ================= -->
+    <h2>Solution Overview & Approach</h2>
+    <p>
+      <strong>Solution Overview:</strong><br />
+      A vision-based counting platform that detects and counts individual
+      planks or pipes from images of stacked materials using a trained
+      object detection model.
+    </p>
+
+    <p><strong>Approach:</strong></p>
+    <ul>
+      <li>Collected real-world image data of plank and pipe stacks</li>
+      <li>Annotated datasets to label individual planks and pipes</li>
+      <li>Trained a deep learning object detection model for accurate counting</li>
+      <li>Developed a mobile application to capture or upload stack images</li>
+      <li>Detected and counted each plank/pipe to compute the total count</li>
+    </ul>
+
+    <!-- ================= TECH STACK ================= -->
+    <h2>Tech Stack</h2>
+
+    <p>
+      <strong>Computer Vision:</strong> Deep learning–based object detection
+      for identifying and counting individual planks and pipes from stacked images.
+    </p>
+
+    <p>
+      <strong>Backend:</strong> Python-based inference service handling
+      model execution, image preprocessing, and count aggregation.
+    </p>
+
+    <p>
+      <strong>Mobile Application:</strong> Lightweight mobile app allowing
+      users to capture images or upload existing photos for instant counting.
+    </p>
+
+    <p>
+      <strong>Deployment:</strong> Edge or on-premise deployment for
+      low-latency inference in warehouse and yard environments.
+    </p>
+
+    <!-- ================= ARCHITECTURE ================= -->
+    <h2>High-Level Architecture</h2>
+    <p>
+      The system follows a modular pipeline consisting of image capture,
+      preprocessing, object detection, count aggregation, and result visualization.
+    </p>
+    <a href="architecture-plank-pipe-count.html" class="arch-link">
+      View High-Level Architecture Diagram →
+    </a>
+
+    <!-- ================= MY ROLE ================= -->
+    <h2>My Role</h2>
+    <ul>
+      <li>Led dataset collection and annotation strategy</li>
+      <li>Trained and optimized object detection models</li>
+      <li>Designed the end-to-end inference and counting pipeline</li>
+      <li>Integrated the model with a mobile application</li>
+      <li>Validated accuracy in real-world warehouse conditions</li>
+    </ul>
+
+    <!-- ================= CHALLENGES ================= -->
+    <h2>Challenges & Solutions</h2>
+    <ul>
+      <li>
+        <strong>Overlapping and tightly packed stacks:</strong><br />
+        Used robust object detection models trained on dense stack scenarios
+      </li>
+      <li>
+        <strong>Varying lighting and background conditions:</strong><br />
+        Applied data augmentation and normalization during training
+      </li>
+      <li>
+        <strong>Different sizes and orientations:</strong><br />
+        Included diverse samples to improve generalization
+      </li>
+    </ul>
+
+    <!-- ================= IMPACT ================= -->
+    <h2>Impact</h2>
+    <ul>
+      <li>Reduced counting time from hours to seconds</li>
+      <li>Improved inventory accuracy and operational efficiency</li>
+      <li>Minimized human error in bulk material handling</li>
+      <li>Enabled scalable counting across multiple sites</li>
+    </ul>
+
+    <!-- ================= FUTURE ================= -->
+    <h2>Future Improvements</h2>
+    <ul>
+      <li>Real-time video-based counting for conveyor systems</li>
+      <li>Integration with warehouse inventory management systems</li>
+      <li>Support for additional material types</li>
+      <li>Analytics dashboard for historical count tracking</li>
+    </ul>
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p>© 2025 AI Engineer Portfolio<br /><em>All rights reserved.</em></p>
+      </div>
+
+      <div class="footer-center">
+        <h4>Explore</h4>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="vision.html">Vision</a>
+        </nav>
+      </div>
+
+      <div class="footer-right">
+        <h4>Connect</h4>
+        <div class="footer-icons">
+          <a href="mailto:hello@example.com">✉️</a>
+          <a href="#">in</a>
+          <a href="#">⌂</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

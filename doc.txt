@@ -1,0 +1,150 @@
+GenAI Led Multidomain Platform
+
+Problem Statement: 
+
+Industry: Mining Oil & Gas
+
+Tech: GenAI
+
+
+Objectives:
+
+Solution Overview & Approach:
+
+Highlevel Architecture:
+
+Tech Stack:
+AI: 
+
+FE/UI:
+
+BE:
+
+Deployment:
+
+
+My Role:
+
+
+Challenges & Solutions:
+
+
+Impact:
+
+Improvements:
+
+
+
+
+ 
+
+Problem Statement: 
+
+Industry: Mining Oil & Gas
+
+Tech: GenAI
+
+
+Objectives:
+
+Solution Overview & Approach:
+
+Highlevel Architecture:
+
+Tech Stack:
+AI: 
+
+FE/UI:
+
+BE:
+
+Deployment:
+
+
+My Role:
+
+
+Challenges & Solutions:
+
+
+Impact:
+
+Improvements:
+
+
+
+#################
+# prompt generic
+#################
+project name: GenAI Led Multidomain Platform
+
+Problem Statement: 
+
+Industry: Mining Oil & Gas
+
+Tech: GenAI
+
+
+Objectives:
+
+Solution Overview & Approach:
+
+Highlevel Architecture:
+
+Tech Stack:
+AI: 
+
+FE/UI:
+
+BE:
+
+Deployment:
+
+
+My Role:
+
+
+Challenges & Solutions:
+
+
+Impact:
+
+Improvements:
+
+
+
+
+ 
+
+Problem Statement: 
+
+Industry: Mining Oil & Gas
+
+Tech: GenAI
+
+
+Objectives:
+
+Solution Overview & Approach:
+
+Highlevel Architecture:
+
+Tech Stack:
+AI: 
+
+FE/UI:
+
+BE:
+
+Deployment:
+
+
+My Role:
+
+
+Challenges & Solutions:
+
+
+Impact:
+
+Improvements:
