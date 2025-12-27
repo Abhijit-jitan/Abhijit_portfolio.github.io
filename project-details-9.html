@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rubber Extruder Machine Health Prediction</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+<div class="app-shell">
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-left">
+        <img src="assets/images/logo.jpg" alt="Logo" class="logo" />
+        <nav class="nav">
+          <a href="index.html">About</a>
+          <a class="active" href="projects.html">Projects</a>
+          <a href="vision.html">Vision</a>
+        </nav>
+      </div>
+      <button class="resume-btn">Download Resume</button>
+    </div>
+  </header>
+
+  <!-- ================= PROJECT DETAILS ================= -->
+  <section class="project-details">
+
+    <h1 class="project-title">
+      Rubber Extruder Machine Health Prediction
+    </h1>
+
+    <div class="project-meta">
+      <strong>Industry:</strong> Manufacturing & Industrial Automation
+      &nbsp;&nbsp;&nbsp;
+      <strong>Technology:</strong> Machine Learning, Time-Series Analysis
+      &nbsp;&nbsp;&nbsp;
+      <strong>Deployment Type:</strong> Edge + On-Premise
+    </div>
+
+    <!-- ================= PROBLEM ================= -->
+    <h2>Problem Statement</h2>
+    <p>
+      Industrial machines such as <strong>rubber extruders and grinding machines</strong>
+      operate under continuous mechanical stress, high temperatures, and moving parts.
+      These conditions cause gradual wear and unexpected failures.
+    </p>
+    <p>
+      When machine failures occur <strong>before scheduled maintenance</strong>,
+      they result in unplanned downtime, production loss, material wastage,
+      and increased operational costs.
+    </p>
+
+    <!-- ================= OBJECTIVES ================= -->
+    <h2>Objectives</h2>
+    <ul>
+      <li>Predict machine failures before they occur</li>
+      <li>Reduce unplanned downtime and production loss</li>
+      <li>Monitor machine health using sensor-based data</li>
+      <li>Enable condition-based maintenance instead of reactive maintenance</li>
+    </ul>
+
+    <!-- ================= SOLUTION ================= -->
+    <h2>Solution Overview & Approach</h2>
+    <p>
+      <strong>Solution Overview:</strong><br />
+      A predictive maintenance system that continuously monitors machine health
+      using vibration and temperature sensors, analyzes historical patterns,
+      and predicts potential failures before production is impacted.
+    </p>
+
+    <p><strong>Approach:</strong></p>
+    <ul>
+      <li>Installed multiple vibration and temperature sensors across critical machine parts</li>
+      <li>Continuously collected time-series sensor data during machine operation</li>
+      <li>Performed signal preprocessing and feature extraction on raw sensor data</li>
+      <li>Trained machine learning models using historical failure and healthy data</li>
+      <li>Predicted anomalies and early failure indicators in real time</li>
+    </ul>
+
+    <!-- ================= TECH STACK ================= -->
+    <h2>Tech Stack</h2>
+
+    <p>
+      <strong>Sensors & Data:</strong> Vibration and temperature sensors deployed
+      across multiple machine components for continuous health monitoring.
+    </p>
+
+    <p>
+      <strong>Machine Learning:</strong> Time-series models and anomaly detection
+      algorithms trained on historical machine behavior and failure patterns.
+    </p>
+
+    <p>
+      <strong>Backend:</strong> Python-based data processing pipelines handling
+      sensor ingestion, feature extraction, model inference, and alert generation.
+    </p>
+
+    <p>
+      <strong>Deployment:</strong> Edge and on-premise deployment to ensure
+      low-latency predictions and reliable operation in factory environments.
+    </p>
+
+    <!-- ================= ARCHITECTURE ================= -->
+    <h2>High-Level Architecture</h2>
+    <p>
+      The system follows a streaming data architecture where sensor data is ingested,
+      processed, analyzed by predictive models, and converted into actionable alerts
+      for maintenance teams.
+    </p>
+    <a href="architecture-machine-health.html" class="arch-link">
+      View High-Level Architecture Diagram →
+    </a>
+
+    <!-- ================= MY ROLE ================= -->
+    <h2>My Role</h2>
+    <ul>
+      <li>Designed the end-to-end predictive maintenance architecture</li>
+      <li>Defined sensor placement strategy across machine components</li>
+      <li>Developed feature extraction and anomaly detection pipelines</li>
+      <li>Trained and validated machine learning models on historical data</li>
+      <li>Worked closely with maintenance and operations teams</li>
+    </ul>
+
+    <!-- ================= CHALLENGES ================= -->
+    <h2>Challenges & Solutions</h2>
+    <ul>
+      <li>
+        <strong>Noisy sensor data:</strong><br />
+        Applied signal filtering, smoothing, and statistical feature extraction
+      </li>
+      <li>
+        <strong>Limited failure data:</strong><br />
+        Used anomaly detection and semi-supervised learning techniques
+      </li>
+      <li>
+        <strong>Real-time inference constraints:</strong><br />
+        Optimized models for edge deployment and low-latency predictions
+      </li>
+    </ul>
+
+    <!-- ================= IMPACT ================= -->
+    <h2>Impact</h2>
+    <ul>
+      <li>Reduced unplanned machine downtime</li>
+      <li>Prevented production loss through early failure prediction</li>
+      <li>Improved maintenance planning and resource utilization</li>
+      <li>Extended machine lifespan through condition-based maintenance</li>
+    </ul>
+
+    <!-- ================= FUTURE ================= -->
+    <h2>Future Improvements</h2>
+    <ul>
+      <li>Integration with SCADA and factory monitoring systems</li>
+      <li>Advanced predictive models using deep learning</li>
+      <li>Automated maintenance scheduling based on predictions</li>
+      <li>Fleet-level analytics across multiple machines</li>
+    </ul>
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p>© 2025 AI Engineer Portfolio<br /><em>All rights reserved.</em></p>
+      </div>
+
+      <div class="footer-center">
+        <h4>Explore</h4>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="vision.html">Vision</a>
+        </nav>
+      </div>
+
+      <div class="footer-right">
+        <h4>Connect</h4>
+        <div class="footer-icons">
+          <a href="mailto:hello@example.com">✉️</a>
+          <a href="#">in</a>
+          <a href="#">⌂</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
