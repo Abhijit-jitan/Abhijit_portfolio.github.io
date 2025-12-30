@@ -72,61 +72,58 @@
     <h2>Solution Overview & Approach</h2>
     <p>
       <strong>Solution Overview:</strong><br />
-      A cloud-native GenAI platform that ingests, indexes, and synthesizes enterprise
-      knowledge across multiple domains while maintaining strict isolation and access control.
+      Azure deployed GenAI platform with Nextjs & Fastapi(be) which will <strong>do knowlwdge mining with over ~15K unstructured/atructured documents</strong>,<strong>hybrid document search with RAG to get, proper response</strong>
+      ,<strong>Synthesis new draft</strong>,<strong>Research assistance </strong>,<strong>Strict isolation & access control</strong>,<strong>scheduled AD sync</strong>,<strong>scheduled automated Doc ingestion</strong>
     </p>
 
     <p><strong>Approach:</strong></p>
     <ul>
-      <li>Multi-format ingestion pipeline for XLS/XLSB, DOC/DOCX, PDF, TXT, RST, MSG, DB</li>
-      <li>Domain-wise vector collections inside a unified database</li>
-      <li>Semantic chunking and metadata enrichment during ingestion</li>
-      <li>RBAC-driven query routing to prevent cross-domain leakage</li>
-      <li>GenAI-powered synthesis for contextual answers and research insights</li>
+      <li>Scheduled multi-format ingestion pipeline for XLS/XLSB, DOC/DOCX, PDF, TXT, RST, MSG, DB</li>
+      <li>Domain-wise embeddings & documents metadata inside Azure MongoDB Vcore vector-db</li>
+      <li>Semantic chunking , filters, metadata during ingestion</li>
+      <li>RBAC-driven query routing in FE to prevent cross-domain leakage</li>
+      <li>GenAI-powered synthesis for contextual answers & research insights</li>
+      <li>RAG based model to fetch response by filtering the metadata & hybrid embedding search</li>
+      <li>Proper reference document/citations fetch with document preivew stack</li>
+      <li>Display platform usage, model configuration, cost analytics, error monitoring inside governance Page</li>
+      <li>Lightweight, Responsive, Enterprise grade interface built using Nextjs for secure and feedback driven enterprise querying</li>
     </ul>
 
     <!-- ================= TECH STACK ================= -->
     <h2>Tech Stack</h2>
 
     <p>
-      <strong>AI:</strong> Large Language Models (LLMs) integrated with vector embeddings
-      and Retrieval-Augmented Generation (RAG) for semantic search and contextual synthesis.
+      <strong>AI:</strong> claude sonet, gpt4.1, RAG model, langchain & langchain graph, 
+      Hybrid search, data connectors, 
     </p>
 
     <p>
-      <strong>FE / UI:</strong> Lightweight, responsive web interface built using HTML5,
-      CSS3, and JavaScript for secure and intuitive enterprise querying.
+      <strong>FE:</strong> Nextjs, chartsjs & RBAC Access control
     </p>
 
     <p>
-      <strong>Backend:</strong> Python-based services using FastAPI with RBAC enforcement,
-      ingestion pipelines, and domain-isolated vector data stores.
+      <strong>Backend:</strong> FastAPI with RBAC rules, Ingestion pipelines, Azure CosmosDB NoSQL, Azure MongoDB, JWT Token based session managed Id.
     </p>
 
     <p>
-      <strong>Deployment:</strong> Cloud-native deployment on Microsoft Azure leveraging
-      App Services, storage, managed databases, and CI/CD pipelines.
+      <strong>Deployment:</strong> Azure Devops, Docker, Azure container App/job, Enterprise grade CI/CD pipelines.
     </p>
 
     <!-- ================= ARCHITECTURE ================= -->
     <h2>High-Level Architecture</h2>
-    <p>
-      The system follows a modular, cloud-native architecture optimized for scalability,
-      security, and enterprise governance.
-    </p>
     <a href="architecture-genai-platform.html" class="arch-link">
-      View High-Level Architecture Diagram →
+     Request to View High-Level Architecture Diagram →
     </a>
 
     <!-- ================= MY ROLE ================= -->
     <h2>My Role</h2>
     <div class="my-role">
       <ul>
-        <li>Designed end-to-end system and solution architecture</li>
-        <li>Led GenAI strategy, RAG design, and embedding optimization</li>
-        <li>Implemented secure RBAC-based domain isolation</li>
-        <li>Built ingestion pipelines and query orchestration layers</li>
-        <li>Mentored engineers and reviewed production deployments</li>
+        <li>Automated & Scheduled Documents Ingestion pipeline</li>
+        <li>Document embeddings & metadata ingestion in Azure MongoDB Vcore, CosmosDB Nosql</li>
+        <li>Fastapi based Micro-services BE pipeline</li>
+        <li>CI/CD pipeline</li>
+        <li>AMC & version Deployment Monitoring </li>
       </ul>
     </div>
 
@@ -134,16 +131,20 @@
     <h2>Challenges & Solutions</h2>
     <ul>
       <li>
-        <strong>Preventing cross-domain answer contamination:</strong><br />
+        <strong>Preventing domainwise data lekage:</strong><br />
         Isolated vector stores per domain with enforced RBAC filters at query time
       </li>
       <li>
-        <strong>Handling heterogeneous document formats at scale:</strong><br />
-        Unified ingestion framework with format-specific parsers and normalization
+        <strong>Handling Structured/Unstuctured document formats at scale:</strong><br />
+        Documentwise data connectors, saving embeddings & metadata in vectordb, filters & folder structure in cosmosdb, tabular data to be stored in SQL 
       </li>
       <li>
         <strong>Maintaining response accuracy over large document volumes:</strong><br />
-        Intelligent chunking, embedding optimization, and retrieval-ranking strategies
+        optimized chunking, embedding optimization, retrieval ranking & Hybrid search
+      </li>
+      <li>
+        <strong>Preventing domainwise data lekage:</strong><br />
+        Isolated vector stores per domain with enforced RBAC filters at query time
       </li>
     </ul>
 
@@ -152,17 +153,18 @@
     <ul>
       <li>Reduced research and knowledge retrieval time by 60%+</li>
       <li>Enabled secure GenAI adoption across enterprise domains</li>
-      <li>Eliminated cross-domain knowledge contamination</li>
-      <li>Scaled ingestion beyond 12,000 documents without degradation</li>
+      <li>Eliminated cross-domain knowledge data leakage </li>
+      <li>Scaled ingestion beyond ~15k documents without degradation/delayed response</li>
+      <li>Quick decision making using historical data retrieval</li>
+      <li>Reduced manual workflows</li>
+      <li>Information Credibility due to proper citation</li>
     </ul>
 
     <!-- ================= FUTURE ================= -->
     <h2>Future Improvements</h2>
     <ul>
-      <li>Agentic workflows for multi-step enterprise research</li>
-      <li>Cross-document reasoning with citations</li>
-      <li>SSO and enterprise identity provider integration</li>
-      <li>Fine-tuned domain-specific LLMs</li>
+      <li>Agentic Research Assistance</li>
+      <li>Generic Document Synthesis template/workflow</li>
     </ul>
 
   </section>
