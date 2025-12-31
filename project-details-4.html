@@ -33,17 +33,17 @@
     </h1>
 
     <div class="project-meta">
-      <strong>Industry:</strong> Healthcare & Personal Medical Management
+      <strong>Industry:</strong> Healthcare
       &nbsp;&nbsp;&nbsp;
-      <strong>Technology:</strong> GenAI, NLP, Secure Data Systems
+      <strong>Technology:</strong> GenAI
       &nbsp;&nbsp;&nbsp;
-      <strong>Deployment Type:</strong> Cloud + Mobile (Android & iOS)
+      <strong>Deployment Type:</strong> Azure + Mobile 
     </div>
 
     <!-- ================= PROBLEM ================= -->
     <h2>Problem Statement</h2>
     <p>
-      Managing <strong>15–20 years of medical history</strong> along with continuously
+      Managing <strong>15–20 years of historical medical reports</strong> along with continuously
       generated new health records for VVIP family members is a highly complex task.
       Medical data exists across <strong>structured, semi-structured, and unstructured formats</strong>
       including reports, prescriptions, vitals, appointments, and physician notes.
@@ -57,7 +57,7 @@
     <!-- ================= OBJECTIVES ================= -->
     <h2>Objectives</h2>
     <ul>
-      <li>Centralize long-term medical records with real-time updates</li>
+      <li>Centralize historical medical records with real-time updates</li>
       <li>Enable secure ingestion of medical documents, vitals, and appointments</li>
       <li>Provide personalized health insights for each family member</li>
       <li>Allow GenAI-powered querying over personal medical data</li>
@@ -75,7 +75,7 @@
 
     <p><strong>Approach:</strong></p>
     <ul>
-      <li>Ingested 15–20 years of legacy medical documents across multiple formats</li>
+      <li>Ingested 15–20 years of historical medical documents across multiple formats</li>
       <li>Integrated real-time vitals, appointments, medications, diet, and exercise plans</li>
       <li>Enabled doctors, nurses, and support staff to update verified medical information</li>
       <li>Maintained individual medical profiles for each family member</li>
@@ -86,23 +86,19 @@
     <h2>Tech Stack</h2>
 
     <p>
-      <strong>AI & GenAI:</strong> Natural language understanding and GenAI models
-      for medical document interpretation, contextual reasoning, and personalized responses.
+      <strong>AI & GenAI:</strong> GenAI models, document interpretation, contextual reasoning
     </p>
 
     <p>
-      <strong>Backend:</strong> Secure Python-based services handling data ingestion,
-      role-based access control, medical record management, and query orchestration.
+      <strong>Backend:</strong> FastAPI, JWT based session id generation, Nodejs
     </p>
 
     <p>
-      <strong>Web Application:</strong> Web-based interface for document ingestion,
-      appointment management, and administrative controls.
+      <strong>Web Application:</strong> Nextjs 
     </p>
 
     <p>
-      <strong>Mobile Applications:</strong> Android and iOS apps providing real-time
-      access to medical data, vitals, reminders, and GenAI-powered querying for family members.
+      <strong>Mobile Applications:</strong> Android and iOS 
     </p>
 
     <p>
@@ -112,10 +108,6 @@
 
     <!-- ================= ARCHITECTURE ================= -->
     <h2>High-Level Architecture</h2>
-    <p>
-      The platform follows a layered architecture consisting of secure data ingestion,
-      medical record management, GenAI reasoning services, and multi-platform client applications.
-    </p>
     <a href="architecture-medical-health-bot.html" class="arch-link">
       View High-Level Architecture Diagram →
     </a>
@@ -123,10 +115,9 @@
     <!-- ================= MY ROLE ================= -->
     <h2>My Role</h2>
     <ul>
-      <li>Designed end-to-end system and security architecture</li>
-      <li>Led GenAI strategy for medical data querying and personalization</li>
-      <li>Implemented role-based access control for doctors, nurses, and staff</li>
-      <li>Integrated web and mobile applications with backend services</li>
+      <li>Automate documents ingestion backend</li>
+      <li>GenAI Led strategy for medical data querying and personalization</li>
+      <li>FastAPI based backend to connect with webapp securly</li>
       <li>Ensured data privacy, isolation, and compliance-ready design</li>
     </ul>
 
@@ -135,7 +126,7 @@
     <ul>
       <li>
         <strong>Handling highly sensitive medical data:</strong><br />
-        Designed strict access control, encryption, and audit logging mechanisms
+        Designed strict access control, encryption, and audit logging mechanisms, Masking the PI
       </li>
       <li>
         <strong>Combining historical and real-time data:</strong><br />
@@ -159,9 +150,6 @@
     <!-- ================= FUTURE ================= -->
     <h2>Future Improvements</h2>
     <ul>
-      <li>Predictive health risk analysis using longitudinal data</li>
-      <li>Integration with wearable devices for continuous monitoring</li>
-      <li>Advanced alerting for anomalies in vitals or medication adherence</li>
       <li>Compliance alignment with healthcare data standards</li>
     </ul>
 
