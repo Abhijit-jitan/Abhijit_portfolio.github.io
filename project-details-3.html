@@ -33,50 +33,47 @@
     </h1>
 
     <div class="project-meta">
-      <strong>Industry:</strong> Manufacturing & Warehousing
+      <strong>Industry:</strong> Manufacturing
       &nbsp;&nbsp;&nbsp;
-      <strong>Technology:</strong> Computer Vision, Object Detection
+      <strong>Technology:</strong> Computer Vision
       &nbsp;&nbsp;&nbsp;
-      <strong>Deployment Type:</strong> Mobile / Edge / On-Premise
+      <strong>Deployment Type:</strong> Mobile & Azure
     </div>
 
     <!-- ================= PROBLEM ================= -->
     <h2>Problem Statement</h2>
     <p>
-      Counting large stacks of planks or pipes—often consisting of
-      <strong>hundreds or thousands of items</strong>—is a repetitive,
-      time-consuming, and error-prone task in manufacturing yards
+      Counting large stacks of planks or pipes, often consisting of
+      <strong>hundreds or thousands of items</strong>,
+      time-consuming, error-prone task in manufacturing yards
       and warehouses.
     </p>
     <p>
       Manual counting leads to <strong>inaccurate inventory records,
-      operational delays, and increased labor effort</strong>,
-      especially when handling bulk materials.
+      operational delays, increased labor effort</strong>
     </p>
 
     <!-- ================= OBJECTIVES ================= -->
     <h2>Objectives</h2>
     <ul>
-      <li>Automate counting of plank and pipe stacks using computer vision</li>
+      <li>Mobile app to take/upload images & crop images</li>
+      <li>Detect plant & pipe with count</li>
       <li>Eliminate manual counting errors and delays</li>
-      <li>Enable fast counting using a simple mobile application</li>
-      <li>Provide reliable and repeatable count results</li>
+      <li>Provide reliable count results</li>
     </ul>
 
     <!-- ================= SOLUTION ================= -->
     <h2>Solution Overview & Approach</h2>
     <p>
       <strong>Solution Overview:</strong><br />
-      A vision-based counting platform that detects and counts individual
-      planks or pipes from images of stacked materials using a trained
-      object detection model.
+      Azure based deployment, where mobile app will take the image & send image to do the inference with counting.
     </p>
 
     <p><strong>Approach:</strong></p>
     <ul>
-      <li>Collected real-world image data of plank and pipe stacks</li>
+      <li>Collected real-world image data of plank & pipe stacks with well distributed data</li>
       <li>Annotated datasets to label individual planks and pipes</li>
-      <li>Trained a deep learning object detection model for accurate counting</li>
+      <li>Trained object detection model for accurate detection & counting</li>
       <li>Developed a mobile application to capture or upload stack images</li>
       <li>Detected and counted each plank/pipe to compute the total count</li>
     </ul>
@@ -85,31 +82,23 @@
     <h2>Tech Stack</h2>
 
     <p>
-      <strong>Computer Vision:</strong> Deep learning–based object detection
-      for identifying and counting individual planks and pipes from stacked images.
+      <strong>Computer Vision:</strong> Object detection, Tracking, Tensorflow
     </p>
 
     <p>
-      <strong>Backend:</strong> Python-based inference service handling
-      model execution, image preprocessing, and count aggregation.
+      <strong>Backend:</strong> Flask micro service
     </p>
 
     <p>
-      <strong>Mobile Application:</strong> Lightweight mobile app allowing
-      users to capture images or upload existing photos for instant counting.
+      <strong>Mobile Application:</strong> flutter & iOS based mobile app
     </p>
 
     <p>
-      <strong>Deployment:</strong> Edge or on-premise deployment for
-      low-latency inference in warehouse and yard environments.
+      <strong>Deployment:</strong> Azure
     </p>
 
     <!-- ================= ARCHITECTURE ================= -->
     <h2>High-Level Architecture</h2>
-    <p>
-      The system follows a modular pipeline consisting of image capture,
-      preprocessing, object detection, count aggregation, and result visualization.
-    </p>
     <a href="architecture-plank-pipe-count.html" class="arch-link">
       View High-Level Architecture Diagram →
     </a>
@@ -117,11 +106,11 @@
     <!-- ================= MY ROLE ================= -->
     <h2>My Role</h2>
     <ul>
-      <li>Led dataset collection and annotation strategy</li>
-      <li>Trained and optimized object detection models</li>
-      <li>Designed the end-to-end inference and counting pipeline</li>
-      <li>Integrated the model with a mobile application</li>
+      <li>Dataset collection and annotation strategy</li>
+      <li>Trained & optimized object detection model</li>
+      <li>Designed end-to-end inference & counting pipeline</li>
       <li>Validated accuracy in real-world warehouse conditions</li>
+      <li>Backend deployment in Azure</li>
     </ul>
 
     <!-- ================= CHALLENGES ================= -->
@@ -133,7 +122,7 @@
       </li>
       <li>
         <strong>Varying lighting and background conditions:</strong><br />
-        Applied data augmentation and normalization during training
+        Applied data augmentation, normalization during training & collection of diversed data
       </li>
       <li>
         <strong>Different sizes and orientations:</strong><br />
@@ -153,10 +142,8 @@
     <!-- ================= FUTURE ================= -->
     <h2>Future Improvements</h2>
     <ul>
-      <li>Real-time video-based counting for conveyor systems</li>
       <li>Integration with warehouse inventory management systems</li>
       <li>Support for additional material types</li>
-      <li>Analytics dashboard for historical count tracking</li>
     </ul>
 
   </section>

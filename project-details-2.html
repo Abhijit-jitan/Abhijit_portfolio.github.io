@@ -33,19 +33,19 @@
     </h1>
 
     <div class="project-meta">
-      <strong>Industry:</strong> Textile & Apparel Manufacturing
+      <strong>Industry:</strong> Textile 
       &nbsp;&nbsp;&nbsp;
-      <strong>Technology:</strong> Computer Vision, Image Processing
+      <strong>Technology:</strong> Computer Vision
       &nbsp;&nbsp;&nbsp;
-      <strong>Deployment Type:</strong> On-Premise / Edge
+      <strong>Deployment Type:</strong> On-Premise 
     </div>
 
     <!-- ================= PROBLEM ================= -->
     <h2>Problem Statement</h2>
     <p>
-      In the textile and garment manufacturing industry, <strong>fabric shrinkage and expansion
-      during processing stages</strong> (washing, dyeing, finishing) leads to
-      dimensional inconsistencies between raw and processed fabric.
+      In textile manufacturing industry, <strong>fabric shrinkage and expansion
+      during processing stages</strong> (washing, dyeing, ironing) leads to
+      dimensional changes between raw & processed fabric.
     </p>
     <p>
       Traditional shrinkage measurement relies heavily on <strong>manual measurement techniques</strong>,
@@ -56,57 +56,54 @@
     <h2>Objectives</h2>
     <ul>
       <li>Automate fabric shrinkage and expansion measurement using computer vision</li>
-      <li>Ensure consistent dimensional quality across raw and processed fabric</li>
       <li>Reduce human error and manual intervention</li>
       <li>Provide measurable shrinkage percentage for quality control teams</li>
+      <li>Governance Dashboard for application monitoring</li>
+      <li>Match fabric barcode with warehouse & POCC data</li>
+      <li>Automated Calibration App</li>
+      <li>User-friendly Operators application for Shrinkage Detection App</li>
     </ul>
 
     <!-- ================= SOLUTION ================= -->
     <h2>Solution Overview & Approach</h2>
     <p>
       <strong>Solution Overview:</strong><br />
-      An automated vision-based inspection system that measures dimensional changes
+      Automated vision-based inspection system that measures dimensional changes
       between raw and processed fabric using predefined reference markings.
     </p>
 
     <p><strong>Approach:</strong></p>
     <ul>
       <li>Apply predefined reference markings on raw fabric samples (e.g., 50×50 cm or 35×35 cm)</li>
-      <li>Capture high-resolution images of raw fabric before processing</li>
-      <li>Capture images of the same fabric after processing</li>
-      <li>Detect and measure distances between markings using computer vision</li>
+      <li>Controlled Camera env to capture high-resolution images of processed fabric</li>
+      <li>Detect & measure distances between markings using computer vision</li>
       <li>Compare raw vs processed measurements to calculate shrinkage or expansion percentage</li>
+      <li>Match the Barcode on fabric and push the shrinkage percentage to POCC</li>
+      <li>Governance Dashboard</li>
+      <li>Automated Calibration App</li>
     </ul>
 
     <!-- ================= TECH STACK ================= -->
     <h2>Tech Stack</h2>
 
     <p>
-      <strong>Computer Vision:</strong> OpenCV-based image processing for marker detection,
-      contour analysis, and distance measurement.
+      <strong>AI:</strong> OpenCV-python, Numpy, Detection
     </p>
 
     <p>
-      <strong>Backend:</strong> Python-based processing pipeline for measurement logic,
-      calibration, and comparison algorithms.
+      <strong>Backend:</strong> FastAPI
     </p>
 
     <p>
-      <strong>UI / Application:</strong> Lightweight desktop or web-based interface
-      to upload images and visualize shrinkage results.
+      <strong>UI / Application:</strong> User-friendly Pyqt5 desktop operator's application & React based Governance application
     </p>
 
     <p>
-      <strong>Deployment:</strong> On-premise or edge-device deployment for factory-floor usage
-      without cloud dependency.
+      <strong>Deployment:</strong> On-premise GPU Server
     </p>
 
     <!-- ================= ARCHITECTURE ================= -->
     <h2>High-Level Architecture</h2>
-    <p>
-      The system follows a simple yet robust pipeline consisting of image acquisition,
-      reference detection, measurement computation, and result visualization.
-    </p>
     <a href="architecture-fabric-shrinkage.html" class="arch-link">
       View High-Level Architecture Diagram →
     </a>
@@ -114,27 +111,27 @@
     <!-- ================= MY ROLE ================= -->
     <h2>My Role</h2>
     <ul>
-      <li>Designed the end-to-end computer vision workflow</li>
-      <li>Implemented distance measurement and shrinkage calculation logic</li>
+      <li>Designed the end-to-end workflow</li>
+      <li>Implemented distance measurement & shrinkage calculation logic</li>
       <li>Handled camera calibration and image normalization</li>
-      <li>Optimized algorithms for reliable factory-floor usage</li>
-      <li>Worked closely with domain experts from textile manufacturing</li>
+      <li>Push Daily shrinkage report to POCC</li>
+      <li>Operator's Application using pyqt5</li>
     </ul>
 
     <!-- ================= CHALLENGES ================= -->
     <h2>Challenges & Solutions</h2>
     <ul>
       <li>
-        <strong>Fabric deformation and wrinkles:</strong><br />
-        Applied image normalization and controlled capture conditions to improve accuracy
+        <strong>Fabric deformation & wrinkles:</strong><br />
+        Using vacum mechanism to keep fabric wrinkle free
       </li>
       <li>
         <strong>Inconsistent lighting conditions:</strong><br />
-        Used adaptive thresholding and contrast normalization
+        Used controlled light & camera environment
       </li>
       <li>
-        <strong>Marker detection reliability:</strong><br />
-        Designed robust marker shapes and validation logic
+        <strong>Marker detection after fabric processing:</strong><br />
+        Used industry standard color, different color marker for printed fabric
       </li>
     </ul>
 
@@ -142,7 +139,6 @@
     <h2>Impact</h2>
     <ul>
       <li>Reduced manual measurement effort significantly</li>
-      <li>Improved dimensional quality consistency</li>
       <li>Enabled data-driven quality control decisions</li>
       <li>Increased throughput in fabric inspection workflows</li>
     </ul>
@@ -151,9 +147,6 @@
     <h2>Future Improvements</h2>
     <ul>
       <li>Automated camera-based conveyor integration</li>
-      <li>Real-time shrinkage monitoring during processing</li>
-      <li>Advanced statistical analysis and trend reporting</li>
-      <li>Integration with ERP and quality management systems</li>
     </ul>
 
   </section>
