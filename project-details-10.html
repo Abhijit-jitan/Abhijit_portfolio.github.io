@@ -33,11 +33,11 @@
     </h1>
 
     <div class="project-meta">
-      <strong>Industry:</strong> Rubber & Manufacturing
+      <strong>Industry:</strong>Manufacturing
       &nbsp;&nbsp;&nbsp;
-      <strong>Technology:</strong> Computer Vision, Detection & Segmentation
+      <strong>Technology:</strong> Computer Vision
       &nbsp;&nbsp;&nbsp;
-      <strong>Deployment Type:</strong> On-Premise / Edge
+      <strong>Deployment Type:</strong> On-Premise & Edge
     </div>
 
     <!-- ================= PROBLEM ================= -->
@@ -81,38 +81,32 @@
       <li>Triggered synchronized image capture only when a block was detected</li>
       <li>Applied detection models to identify bale surfaces</li>
       <li>Used segmentation models on detected surfaces to locate defects</li>
+      <li>Operators App to monitor the inspection</li>
+      <li>Dashboard App for Governance monitoring</li>
     </ul>
 
     <!-- ================= TECH STACK ================= -->
     <h2>Tech Stack</h2>
 
     <p>
-      <strong>Computer Vision:</strong> Detection models to localize rubber bale surfaces
-      and segmentation models to identify fine-grained surface defects.
+      <strong>Computer Vision:</strong> Detection, Segmentation
     </p>
 
     <p>
-      <strong>Hardware Integration:</strong> Industrial cameras, IR sensors,
-      and mechanical flipper systems for synchronized inspection.
+      <strong>Hardware Integration:</strong> MVS cameras, IR sensors, MVS Lights
+      & mechanical flipper systems for synchronized inspection.
     </p>
 
     <p>
-      <strong>Backend:</strong> Python-based inference pipeline handling
-      image acquisition, model execution, defect aggregation, and alerting.
+      <strong>Backend:</strong> FastApi
     </p>
 
     <p>
-      <strong>Deployment:</strong> On-premise or edge deployment to ensure
-      low-latency inspection directly on the production floor.
+      <strong>Deployment:</strong> On-premise & edge device
     </p>
 
     <!-- ================= ARCHITECTURE ================= -->
     <h2>High-Level Architecture</h2>
-    <p>
-      The system follows a coordinated inspection pipeline where sensor triggers,
-      camera capture, AI inference, and alert generation operate in real time
-      to support continuous production.
-    </p>
     <a href="architecture-rubber-bale-defect.html" class="arch-link">
       View High-Level Architecture Diagram →
     </a>
@@ -120,11 +114,10 @@
     <!-- ================= MY ROLE ================= -->
     <h2>My Role</h2>
     <ul>
-      <li>Designed the complete multi-camera inspection architecture</li>
+      <li>Multi-camera, IR sensor, Lights setup </li>
       <li>Defined sensor-triggered image capture logic</li>
-      <li>Trained and optimized detection and segmentation models</li>
+      <li>Trained & optimized detection/segmentation models</li>
       <li>Integrated hardware components with AI inference pipelines</li>
-      <li>Worked closely with production and quality control teams</li>
     </ul>
 
     <!-- ================= CHALLENGES ================= -->
@@ -156,9 +149,6 @@
     <!-- ================= FUTURE ================= -->
     <h2>Future Improvements</h2>
     <ul>
-      <li>Bottom-surface inspection using advanced conveyor mechanisms</li>
-      <li>Defect severity classification and grading</li>
-      <li>Integration with MES and quality reporting systems</li>
       <li>Continuous model improvement using production feedback loops</li>
     </ul>
 

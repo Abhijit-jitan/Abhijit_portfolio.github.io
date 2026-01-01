@@ -33,11 +33,11 @@
     </h1>
 
     <div class="project-meta">
-      <strong>Industry:</strong> Manufacturing & Industrial Automation
+      <strong>Industry:</strong> Manufacturing
       &nbsp;&nbsp;&nbsp;
-      <strong>Technology:</strong> Machine Learning, Time-Series Analysis
+      <strong>Technology:</strong> Sensor & Machine Learning
       &nbsp;&nbsp;&nbsp;
-      <strong>Deployment Type:</strong> Edge + On-Premise
+      <strong>Deployment Type:</strong> Azure
     </div>
 
     <!-- ================= PROBLEM ================= -->
@@ -71,7 +71,7 @@
       and predicts potential failures before production is impacted.
     </p>
 
-    <p><strong>Approach:</strong></p>
+    <p><st rong>Approach:</strong></p>
     <ul>
       <li>Installed multiple vibration and temperature sensors across critical machine parts</li>
       <li>Continuously collected time-series sensor data during machine operation</li>
@@ -84,32 +84,27 @@
     <h2>Tech Stack</h2>
 
     <p>
-      <strong>Sensors & Data:</strong> Vibration and temperature sensors deployed
-      across multiple machine components for continuous health monitoring.
+      <strong>Sensors & Data:</strong> Vibration and temperature sensors
     </p>
 
     <p>
-      <strong>Machine Learning:</strong> Time-series models and anomaly detection
-      algorithms trained on historical machine behavior and failure patterns.
+      <strong>Machine Learning:</strong> Anomaly detection
     </p>
 
     <p>
-      <strong>Backend:</strong> Python-based data processing pipelines handling
-      sensor ingestion, feature extraction, model inference, and alert generation.
+      <strong>Backend:</strong> FastApi
     </p>
 
     <p>
-      <strong>Deployment:</strong> Edge and on-premise deployment to ensure
-      low-latency predictions and reliable operation in factory environments.
+      <strong>UI:</strong> Webapp
+    </p>
+
+    <p>
+      <strong>Deployment:</strong> On-premise 
     </p>
 
     <!-- ================= ARCHITECTURE ================= -->
     <h2>High-Level Architecture</h2>
-    <p>
-      The system follows a streaming data architecture where sensor data is ingested,
-      processed, analyzed by predictive models, and converted into actionable alerts
-      for maintenance teams.
-    </p>
     <a href="architecture-machine-health.html" class="arch-link">
       View High-Level Architecture Diagram →
     </a>
@@ -134,10 +129,6 @@
       <li>
         <strong>Limited failure data:</strong><br />
         Used anomaly detection and semi-supervised learning techniques
-      </li>
-      <li>
-        <strong>Real-time inference constraints:</strong><br />
-        Optimized models for edge deployment and low-latency predictions
       </li>
     </ul>
 
