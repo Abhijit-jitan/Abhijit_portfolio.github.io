@@ -33,26 +33,25 @@
     </h1>
 
     <div class="project-meta">
-      <strong>Industry:</strong> Manufacturing, Supply Chain & Logistics
+      <strong>Industry:</strong> Manufacturing
       &nbsp;&nbsp;&nbsp;
-      <strong>Technology:</strong> Automation, Messaging Platforms, Workflow Systems
+      <strong>Technology:</strong> Automation
       &nbsp;&nbsp;&nbsp;
-      <strong>Deployment Type:</strong> Cloud + IVR + WhatsApp
+      <strong>Deployment Type:</strong> Azure
     </div>
 
     <!-- ================= PROBLEM ================= -->
     <h2>Problem Statement</h2>
     <p>
       Large manufacturing plants receive raw materials via
-      <strong>300–500 trucks per day</strong>. Managing truck arrivals,
+      <strong>300–500 trucks per day</strong>, Managing truck arrivals,
       unloading schedules, and quality checks manually creates
       congestion, long wait times, and inconsistent material handling.
     </p>
     <p>
       Without a structured appointment system, it becomes difficult to
       <strong>prioritize compliant drivers, maintain material quality,
-      and enforce operational discipline</strong>, leading to inefficiencies
-      and disputes at factory gates.
+      and enforce operational discipline</strong>, leading to chaos at factory gates.
     </p>
 
     <!-- ================= OBJECTIVES ================= -->
@@ -61,7 +60,7 @@
       <li>Streamline truck appointment booking for raw material delivery</li>
       <li>Reduce congestion and waiting time at factory gates</li>
       <li>Ensure quality compliance during unloading</li>
-      <li>Incentivize disciplined and compliant drivers</li>
+      <li>Process disciplined and compliant driver's vehicle first</li>
       <li>Support both individual farmers and cooperatives</li>
     </ul>
 
@@ -88,30 +87,25 @@
 
     <p>
       <strong>Messaging & IVR:</strong> WhatsApp chatbot and IVR systems
-      enabling easy appointment booking for drivers without smartphones.
     </p>
 
     <p>
-      <strong>Backend:</strong> Workflow-driven backend managing appointments,
-      validations, priority rules, and unloading sequence orchestration.
+      <strong>Backend:</strong> FastApi & nodejs
     </p>
 
     <p>
-      <strong>Operations Dashboard:</strong> Web-based dashboard for plant
-      operators to monitor truck flow, unloading status, and compliance metrics.
+      <strong>UI:</strong> React based webapp
+    </p>
+    <p>
+      <strong>Database:</strong>Azure CosmosDb Nosql, Azure SQL DB 
+    </p>
+    <p>
+      <strong>Deployment:</strong>Azure 
     </p>
 
-    <p>
-      <strong>Deployment:</strong> Cloud-native deployment supporting high
-      throughput and peak load handling during operational hours.
-    </p>
 
     <!-- ================= ARCHITECTURE ================= -->
     <h2>High-Level Architecture</h2>
-    <p>
-      The system follows an event-driven architecture connecting booking
-      channels (WhatsApp/IVR), validation engines, and factory operations dashboards.
-    </p>
     <a href="architecture-truck-appointment.html" class="arch-link">
       View High-Level Architecture Diagram →
     </a>
@@ -123,7 +117,6 @@
       <li>Defined rule-based prioritization and reward mechanisms</li>
       <li>Integrated WhatsApp chatbot and IVR booking channels</li>
       <li>Built backend systems for validation and scheduling</li>
-      <li>Collaborated with plant operations and logistics teams</li>
     </ul>
 
     <!-- ================= CHALLENGES ================= -->
@@ -158,7 +151,6 @@
       <li>AI-based arrival time prediction and slot optimization</li>
       <li>Integration with weighbridge and quality lab systems</li>
       <li>Advanced analytics for supplier and driver performance</li>
-      <li>Multi-plant and regional rollout support</li>
     </ul>
 
   </section>

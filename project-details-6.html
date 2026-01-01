@@ -60,13 +60,15 @@
       <li>Ensure worker safety compliance using AI-based validation</li>
       <li>Reduce approval and validation turnaround time</li>
       <li>Provide real-time visibility to managers and contractors</li>
+      <li>Mobile app for field-workers to take the images & videos as per the checklist</li>
+      <li>Webapp for contractors/managers to monitor or validate AI-based validation </li>
     </ul>
 
     <!-- ================= SOLUTION ================= -->
     <h2>Solution Overview & Approach</h2>
     <p>
       <strong>Solution Overview:</strong><br />
-      A mobile-first permit-to-work automation platform that uses location intelligence,
+      Mobile app permit-to-work automation platform that uses location intelligence,
       computer vision, and AI validation to digitize and accelerate telecom field operations.
     </p>
 
@@ -84,36 +86,27 @@
     <h2>Tech Stack</h2>
 
     <p>
-      <strong>Computer Vision & AI:</strong> AI models for PPE detection, ID validation,
-      and safety compliance checks from images and videos captured on-site.
+      <strong>AI:</strong>Detection, Tracking, Video Analytics, GenAI 
     </p>
 
     <p>
-      <strong>Mobile Application:</strong> Field-ready mobile app with camera, GPS,
-      and sensor integrations to capture site and worker data.
+      <strong>Mobile Application:</strong> iOS & Android App
     </p>
 
     <p>
-      <strong>Backend:</strong> Python-based backend handling AI inference,
-      checklist orchestration, data validation, and workflow automation.
+      <strong>Backend:</strong> FastApi BE
     </p>
 
     <p>
-      <strong>Web Application:</strong> Web dashboard for managers and contractors
-      to review, approve, and audit permit-to-work submissions.
+      <strong>Web Application:</strong> React Based webapp
     </p>
 
     <p>
-      <strong>Deployment:</strong> Cloud-based backend with mobile edge capture
-      for real-time field validation and centralized oversight.
+      <strong>Deployment:</strong> Azure
     </p>
 
     <!-- ================= ARCHITECTURE ================= -->
     <h2>High-Level Architecture</h2>
-    <p>
-      The system follows an event-driven architecture connecting mobile field applications,
-      AI validation services, and enterprise approval workflows.
-    </p>
     <a href="architecture-telecom-ptw.html" class="arch-link">
       View High-Level Architecture Diagram →
     </a>
@@ -121,8 +114,8 @@
     <!-- ================= MY ROLE ================= -->
     <h2>My Role</h2>
     <ul>
-      <li>Designed the end-to-end system and workflow architecture</li>
-      <li>Led AI-based PPE and ID validation model integration</li>
+      <li>Data collection & model training for multiple usecases </li>
+      <li>Optimaized inference pipeline for the checklists validation</li>
       <li>Defined mobile-to-web data pipelines and approval flows</li>
       <li>Worked closely with telecom safety and operations teams</li>
       <li>Ensured scalability and reliability for large field deployments</li>
@@ -141,7 +134,11 @@
       </li>
       <li>
         <strong>Long approval cycles:</strong><br />
-        Reduced validation time from ~3 hours to 15–20 minutes through automation
+        Reduced validation time from ~3 hours to 10-15 minutes through automation
+      </li>
+      <li>
+        <strong>Validation credibility :</strong><br />
+        After the AI-validation, there is manager/contractorvalidation too
       </li>
     </ul>
 
@@ -157,9 +154,6 @@
     <!-- ================= FUTURE ================= -->
     <h2>Future Improvements</h2>
     <ul>
-      <li>Real-time video-based safety monitoring</li>
-      <li>Integration with telecom asset management systems</li>
-      <li>Advanced analytics on safety violations and trends</li>
       <li>Offline-first capabilities for remote tower locations</li>
     </ul>
 
