@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Realtime Automated Towel Count System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+<div class="app-shell">
+
+  <!-- ================= HEADER ================= -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-left">
+        <img src="assets/images/logo.jpg" alt="Logo" class="logo" />
+        <nav class="nav">
+          <a href="index.html">About</a>
+          <a class="active" href="projects.html">Projects</a>
+          <a href="vision.html">Vision</a>
+        </nav>
+      </div>
+      <a
+        href="assets/resume/Abhijit_Sutar_AI_Tech_Lead_CV.docx"
+        class="resume-btn"
+        download
+      >
+        Download Resume
+      </a>
+    </div>
+  </header>
+
+  <!-- ================= PROJECT DETAILS ================= -->
+  <section class="project-details">
+
+    <h1 class="project-title">
+      Realtime Automated Towel Count System
+    </h1>
+
+    <div class="project-meta">
+      <strong>Industry:</strong> Textile
+      &nbsp;&nbsp;&nbsp;
+      <strong>Technology:</strong> Computer Vision
+      &nbsp;&nbsp;&nbsp;
+      <strong>Deployment Type:</strong> On-Premise & GPU Server
+    </div>
+
+    <!-- ================= PROBLEM ================= -->
+    <h2>Problem Statement</h2>
+    <p>
+      In textile manufacturing units, towel rolls are produced continuously
+      on high-speed machines. Accurately counting towels manually is
+      <strong>time-consuming, error-prone, and inefficient</strong>,
+      especially under high production loads.
+    </p>
+    <p>
+      Traditional mechanical count/manual count lack accuracy at speed and do not
+      integrate well with modern digital production systems.
+    </p>
+
+    <!-- ================= OBJECTIVES ================= -->
+    <h2>Objectives</h2>
+    <ul>
+      <li>Automate Yash textile machine with modbus relay & Raspberry pi(reliable stop/start control from a centralized system)</li>
+      <li>Camera & Light connection setup</li>
+      <li>Towel data collection, model train & model evaluation</li>
+      <li>Optimized towel inference pipeline for towel detection & counting</li>
+      <li>Ensure accurate counting without slowing production</li>
+      <li>Connect Raspberry-pi to central gpu server for direct access</li>
+      <li>Operator's app to input towel batch details to count, monitor & control the machine</li>
+    </ul>
+
+    <!-- ================= SOLUTION ================= -->
+    <h2>Solution Overview & Approach</h2>
+    <p>
+      <strong>Solution Overview:</strong><br />
+      Real-time, vision-based towel counting system tightly integrated
+      with textile machinery, lighting, industrial cameras, GPU inference,
+      and machine control using Raspberry Pi and Modbus relays.
+    </p>
+
+    <p><strong>Approach:</strong></p>
+    <ul>
+      <li>Hardware like Camera, Light, Gpu server installation & connection</li>
+      <li>Modbus rellay & Raspberry-pi connection with textile rolling machine to control start & stop</li>
+      <li>Streamed camera frames to a GPU server for real-time inference</li>
+      <li>Connected a Raspberry Pi to the GPU server via optical fiber</li>
+      <li>Towel data collection, model train & evaluation</li>
+      <li>Pyside operator's application to input roll details, controll machine on/off & monitor the towel count</li>
+    </ul>
+
+    <!-- ================= TECH STACK ================= -->
+    <h2>Tech Stack</h2>
+
+    <p>
+      <strong>Computer Vision:</strong> Detection, Yolo, Pytorch
+    </p>
+
+    <p>
+      <strong>Hardware Integration:</strong> MVS camera, flood lighting, Modbus relay, Raspberry Pi 
+    </p>
+
+    <p>
+      <strong>Backend & Control:</strong> Flask based gpu inference pipeline, detection/count logic, control signaling for start/stop conditions
+    </p>
+
+    <p>
+      <strong>Deployment:</strong> On-premise GPU server, Raspberry-pi
+    </p>
+
+    <!-- ================= ARCHITECTURE ================= -->
+    <h2>High-Level Architecture</h2>
+    <a href="architecture-towel-count.html" class="arch-link">
+      View High-Level Architecture Diagram →
+    </a>
+
+    <!-- ================= MY ROLE ================= -->
+    <h2>My Role</h2>
+    <ul>
+      <li>Integrated industrial camera, lighting, and control hardware</li>
+      <li>Developed real-time GPU-based counting logic</li>
+      <li>Implemented Raspberry Pi and Modbus relay communication</li>
+      <li>Handled production deployment and on-site validation</li>
+    </ul>
+
+    <!-- ================= CHALLENGES ================= -->
+    <h2>Challenges & Solutions</h2>
+    <ul>
+      <li>
+        <strong>High-speed motion blur:</strong><br />
+        Solved using controlled lighting and optimized camera exposure
+      </li>
+      <li>
+        <strong>Reliable machine control:</strong><br />
+        Used Modbus relay with Raspberry Pi for deterministic start/stop signals
+      </li>
+    </ul>
+
+    <!-- ================= IMPACT ================= -->
+    <h2>Impact</h2>
+    <ul>
+      <li>Eliminated manual towel counting errors</li>
+      <li>Enabled real-time, accurate production tracking</li>
+      <li>Reduced operational dependency on human intervention</li>
+      <li>Improved production efficiency and reliability</li>
+    </ul>
+
+    <!-- ================= FUTURE ================= -->
+    <h2>Future Improvements</h2>
+    <ul>
+      <li>Model Upgrade & AMC</li>
+    </ul>
+
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p>© 2025 AI Engineer Portfolio<br /><em>All rights reserved.</em></p>
+      </div>
+
+      <div class="footer-center">
+        <h4>Explore</h4>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="vision.html">Vision</a>
+        </nav>
+      </div>
+
+      <div class="footer-right">
+        <h4>Connect</h4>
+        <div class="footer-icons">
+          <a href="mailto:hello@example.com">✉️</a>
+          <a href="#">in</a>
+          <a href="#">⌂</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
